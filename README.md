@@ -15,20 +15,22 @@
 1. Клонируйте репозиторий: 
    ```sh
    git clone https://github.com/tvirgg/inv_bot.git
-   cd inv_bot
+   cd inv_bot``
 ## Создайте и активируйте виртуальное окружение:
 
 python -m venv venv
 source venv/bin/activate  # Для Windows: venv\Scripts\activate
 
 ### Установите необходимые зависимости:
+```sh
 pip install -r requirements.txt
-
+```
 
 
 ## Создайте базу данных PostgreSQL и таблицы:
 
 -- Создание таблиц users и referrals с учетом channel_id
+```sh
 CREATE TABLE users (
     user_id BIGINT PRIMARY KEY,
     username TEXT,
@@ -47,10 +49,10 @@ CREATE TABLE referrals (
 -- Предоставление привилегий пользователю bot_user
 GRANT ALL PRIVILEGES ON TABLE users TO bot_user;
 GRANT ALL PRIVILEGES ON TABLE referrals TO bot_user;
-
+```
 
 ## env
-
+```sh
 API_ID=your_api_id 
 API_HASH=your_api_hash 
 BOT_TOKEN=your_bot_token 
@@ -59,12 +61,12 @@ DB_USER=your_db_user
 DB_PASS=your_db_password 
 DB_HOST=your_db_host 
 DB_PORT=your_db_port
-
+```
 
 ## Активируйте виртуальное окружение, если оно еще не активировано:
-
+```sh
 source venv/bin/activate  # Для Windows: venv\Scripts\activate
-
+```
 
 ## Запустите бота:
 
