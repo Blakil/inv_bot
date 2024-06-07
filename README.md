@@ -16,19 +16,19 @@
    ```sh
    git clone https://github.com/tvirgg/inv_bot.git
    cd inv_bot
-Создайте и активируйте виртуальное окружение:
+### Создайте и активируйте виртуальное окружение:
 
 
-# 1 python -m venv venv
+python -m venv venv
 source venv/bin/activate  # Для Windows: venv\Scripts\activate
 Установите необходимые зависимости:
 
 
-# pip install -r requirements.txt
+ pip install -r requirements.txt
 
 
 
-#Создайте базу данных PostgreSQL и таблицы:
+### Создайте базу данных PostgreSQL и таблицы:
 
 -- Создание таблиц users и referrals с учетом channel_id
 CREATE TABLE users (
@@ -51,7 +51,7 @@ GRANT ALL PRIVILEGES ON TABLE users TO bot_user;
 GRANT ALL PRIVILEGES ON TABLE referrals TO bot_user;
 
 
-#env
+###env
 
 API_ID=your_api_id 
 API_HASH=your_api_hash 
@@ -63,12 +63,12 @@ DB_HOST=your_db_host
 DB_PORT=your_db_port
 
 
-#Активируйте виртуальное окружение, если оно еще не активировано:
+###Активируйте виртуальное окружение, если оно еще не активировано:
 
 source venv/bin/activate  # Для Windows: venv\Scripts\activate
 
 
-#Запустите бота:
+###Запустите бота:
 
 python bot.py
 Пример использования
