@@ -1,0 +1,34 @@
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Environment variables file
+.env
+
+# Pyrogram session files
+*.session
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*.so
+*.dylib
+*.dll
+
+# Logs
+*.log
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# System-specific files
+.DS_Store
+Thumbs.db
